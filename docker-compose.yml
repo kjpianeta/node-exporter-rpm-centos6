@@ -1,0 +1,10 @@
+version: '2'
+services:
+  rpmbuilder:
+    build:
+      context: .
+    image: rpmbuilder:1.0
+    environment:
+      - SPEC_FILE
+    volumes:
+    - .:/home/rpmbuilder/

@@ -1,0 +1,9 @@
+version: '2'
+services:
+  rpmtest:
+    build:
+      context: .
+    image: testrpm:1.0
+    volumes:
+    - .:/test
+    working_dir: /test

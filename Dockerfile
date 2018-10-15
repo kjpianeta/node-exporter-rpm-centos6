@@ -32,4 +32,4 @@ USER rpmbuilder
 
 WORKDIR /home/rpmbuilder
 
-ENTRYPOINT [ "./build-rpm.sh", "${SPEC_FILE}" ]
+ENTRYPOINT "./build-rpm.sh" ${SPEC_FILE}

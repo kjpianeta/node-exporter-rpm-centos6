@@ -1,2 +1,4 @@
 .history
 .git
+.bash*
+rpmbuild/

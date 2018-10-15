@@ -40,9 +40,8 @@ rpmbuild --clean -ba $@
 rc=$?; if [[ $rc != 0 ]]; then exit $rc; fi
 
 
-rm -f test/*.rpm
-cp -p rpmbuild/RPMS/x86_64/*.rpm test/
-
+rm -f "${RPMBUILD_TOP_DIR}/test/*.rpm"
+find  "${RPMBUILD_TOP_DIR}" -name "node_exporter-*-2.el6.x86_64.rpm" -print
 
 
 
